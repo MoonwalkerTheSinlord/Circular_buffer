@@ -435,7 +435,7 @@ bool ComLib::send(const INFO *msg, const NAME_CHANGED_MSG *nameChanged_msg, cons
 		// Now the consumer can first read if the message is a dummy or normal, and then the length of message. Copy the message into memory
 		memcpy(base + (*head) + sizeof(HEADER), nameChanged_msg, h.length);
 
-		// Increment the head with the size
+		// Increment the head with the size:
 		*head += sizeof(HEADER) + h.length;
 
 		success = true;
