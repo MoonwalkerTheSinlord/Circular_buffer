@@ -117,7 +117,7 @@ public:
 		MSG_ROLE role;
 	};
 
-	// Constructor
+	// Constructor:
 	// secret is the known name for the shared memory
 	// buffSize is in MEGABYTES (multiple of 1<<20)
 	// type is TYPE::PRODUCER or TYPE::CONSUMER
